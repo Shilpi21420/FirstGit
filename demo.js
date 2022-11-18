@@ -10,3 +10,7 @@ var c=document.getElementsByClassName('list-group-item');
    //c[1].style.background='green';
 var titles=document.querySelectorAll('.title');
 titles[1].style.color='green';
+var odd=document.querySelectorAll('li:nth-child(odd)');
+for(var i=0;i<odd.length;i++){
+    odd[i].style.backgroundColor='green';
+}
