@@ -14,6 +14,7 @@ function addItem(e){
   li.appendChild(deleteBtn);
   itemList.appendChild(li);
 }
+// remove Function
 
 function removeItem(e){
   if(e.target.classList.contains('delete')){
@@ -23,4 +24,3 @@ function removeItem(e){
     }
   }
 }
-
