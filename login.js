@@ -13,10 +13,19 @@ function onSubmit(e){
     
     }
     else{
-        localStorage.setItem('name',nameinput.value);
-        localStorage.setItem('Email',emailinput.value);
+        const na=nameinput.value;
+        const em=emailinput.value;
+        localStorage.setItem('name',na);
+        localStorage.setItem('Email',em);
+        
+        const obj={
+            na,
+            em
+        };
+      localStorage.setItem('userdetails',JSON.stringify(obj));
+
     }
-    
+
     nameinput.value='';
     emailinput.value='';
     
