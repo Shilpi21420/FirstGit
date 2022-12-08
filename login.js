@@ -18,4 +18,5 @@ function onSubmit(e){
     }
     nameinput.value='';
     emailinput.value='';
+    
 }
