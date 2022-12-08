@@ -1,0 +1,29 @@
+<html>
+    <h1>Appointment Booking App</h1>
+    
+    <body>
+        <form onsubmit="savetolocalstorage(event)">
+         <input type="text" name="username" required/>
+         <input type="text" name="emailId" required />
+         <button>Submit</button>
+        </form>
+
+        <script>
+            
+          function savetolocalstorage(event){
+            event.preventDefault();
+            const name=event.target.username.value;
+            const email=event.target.emailId.value;
+        
+            const obj={
+                name,
+                email
+            
+            }
+            localStorage.setItem('userDetails',JSON.stringify(obj));
+            //console.log(JSON.parse(localStorage.getItem("obj")));
+            
+          }
+        </script>
+    </body>
+</html>
