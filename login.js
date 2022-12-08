@@ -16,6 +16,7 @@ function onSubmit(e){
         localStorage.setItem('name',nameinput.value);
         localStorage.setItem('Email',emailinput.value);
     }
+    
     nameinput.value='';
     emailinput.value='';
     
